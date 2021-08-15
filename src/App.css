@@ -1,38 +1,106 @@
 .App {
-  text-align: center;
+  max-width: 500px;
+  height: 100vh;
+  margin: auto;
+  background-color: #222;
+  font-family: Roboto;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  margin: 0 30px;
+  color: #fff;
+}
+h2 {
+  margin-bottom: 0;
+}
+i {
+  margin-right: 20px;
+}
+.billboard {
+  background-image: url("https://images.unsplash.com/photo-1612028430503-c3842bf8ee7a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=376&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  width: 500px;
 }
 
-.App-link {
-  color: #61dafb;
+.content {
+  margin: 0 30px;
+  /* color: #fff; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+P {
+  padding: 30px 0;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+button {
+  padding: 10px 20px;
+  background-color: orange;
+  border: 1px solid #000;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+button:hover {
+  /* letter-spacing: 1px; */
+  transform: scale(1.1);
+}
+.tools-area {
+  margin-top: 24px;
+  background-color: #fff;
+  height: 40px;
+  width: 100%;
+}
+
+.tools {
+  padding: 10px 45px;
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* .btn-1 {
+  height: 10px;
+  width: 10px;
+  background-color: orange;
+  border: 1px solid #000;
+}
+.btn-2 {
+  height: 10px;
+  width: 10px;
+  background-color: #fff;
+  border: 1px solid #000;
+} */
+.bottom-area {
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.bottom-left {
+  color: #fff;
+}
+.bottom-right {
+  background-color: rgb(51, 180, 240);
+}
+input {
+  border: none;
+  background: none;
+  height: auto;
+  width: auto;
+  border-radius: 50px;
+}
+input::-webkit-color-swatch-wrapper {
+  height: 24px;
+  width: 24px;
+  padding: 0;
 }
